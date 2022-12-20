@@ -52,6 +52,9 @@ sottometti.addEventListener('click',
         scomparsa.style.display = "block";
         document.getElementById("utente").innerHTML = identità.value
 
+        document.getElementById("random-cabin").innerHTML = ((Math.random() * 11 ) .toFixed(0));
+        document.getElementById("random-code").innerHTML = ((Math.random() + 9) .toFixed(7));
+
         if(choice.value == "anni 18-65") {
 
             let ticketFair = ((ticketUnit*kilo.value) * 1);
