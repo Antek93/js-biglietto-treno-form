@@ -17,7 +17,3 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 
 Nota:
 Se non vi sentite particolarmente creativi, questa potrebbe essere un'implementazione da seguire per il secondo milestone. Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
-Fissato da Alessio Vietri
-13:07
-image.png
- 
