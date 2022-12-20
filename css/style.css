@@ -58,3 +58,7 @@ body {
     padding: 5px;
     margin: 0px 10px;
 }
+
+.hiding {
+    display: none;
+}
