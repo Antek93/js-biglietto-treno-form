@@ -8,5 +8,53 @@
 
 body {
     background-color: #c01454;
+}
+
+.pink-box {
+    width: 100vw;
+}
+
+.title {
+    text-align: center;
     color: white;
+}
+
+.white-box {
+    width: 45%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+
+.input-box {
+   display: flex;
+   justify-content: center;
+   margin: 10px ;
+}
+
+.padd {
+    padding: 0px 20px;
+}
+
+.titolino {
+    color: #c01454;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.input-style {
+    border: 1px solid #c01454;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.tag-style {
+    border: 1px solid #c01454;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 10px;
 }
