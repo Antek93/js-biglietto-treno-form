@@ -6,39 +6,43 @@ const kilo = document.getElementById("kilometri")
 const choice = document.getElementById("range-età")
 // GET INFO FROM SUBMIT BUTTON 
 const sottometti = document.getElementById("sottometti")
+// TARIFFA STANDARD BIGLIETTI
+let ticketUnit = 0.21;
+
+
+// MILESTONE 1 - STAMPA IN CONSOLE
+// CALCOLI FUNZIONANTI
 
 sottometti.addEventListener('click', 
                          
     function() {
 
         console.log('Cliccato su submitButton');
+        console.log("L'utente si chiama:", identità.value);
+        console.log("L'utente percorrerà", kilo.value + "km");
+        console.log("L'utente appartiene al range", choice.value);
+        
+        if(choice.value == "anni 18-65") {
 
-        console.log('Il valore di nome-cognome è:', identità.value);
+            let ticketFair = ((ticketUnit*kilo.value) * 1);
+            console.log("Tariffa standard:", ticketFair .toFixed(2) + "€")
 
-        console.log('Il valore di kilometri è', kilo.value);
+        } else if(choice.value == "anni -18") {
+            let ticketFair = ((ticketUnit*kilo.value) * 0.8);
+            console.log("Tariffa sconto minori", ticketFair .toFixed(2) + "€")
 
-        console.log("L'età range selezionata è:" choice.value);
-        // console.log(genderSelect.innerHTML);
-
-        // if (genderSelect.value == 'm') {
-        //     fullTextP.innerHTML = 'L\'utente ' + nameInput.value + ' ha indicato come genere Uomo';
-        // }
-        // else if (genderSelect.value == 'f') {
-        //     fullTextP.innerHTML = 'L\'utente ' + nameInput.value + ' ha indicato come genere Donna';
-        // }
-        // else {
-        //     fullTextP.innerHTML = 'L\'utente ' + nameInput.value + ' ha preferito non specificare il proprio genere';
-        // }
+        } else {
+            let ticketFair = ((ticketUnit*kilo.value) * 0.6 );
+            console.log("Tariffa sconto over 65", ticketFair .toFixed(2) + "€")
+        }
 
     }
                          
 );
 
+
 // const age = parseInt(prompt('Inserisci tua età'));
 // console.log("Età utente:", age);
-
-// let ticket_unit = 0.21;
-// let ticket_fair = (distance * ticket_unit);
 
 // if (age >= 18 && age <= 65) {
 //     console.log("Costo biglietto standard:", ((ticket_fair * 100) / 100) .toFixed(2) + "€");

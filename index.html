@@ -12,28 +12,33 @@
         <h1>Calcola il prezzo del tuo biglietto</h1>
     </header>
     <main>
-        <form action="">
-
+         <!--INPUT RECEIVER INFORMAZIONI UTENTE-->
+        <div>
             <label for="nome-cognome">
+                <div>Nome e Cognome</div>
                 <input id="nome-cognome" name="Nome+Cognome:" type="text" placeholder="Inserisci nome e cognome">
             </label>
             <label for="kilometri">
+                <div>Km da percorrere</div>
                 <input id="kilometri" name="Kilometri:" type="text" placeholder="Inserisci distanza da percorrere">
             </label>
             <label for="range-età">
+                <div>Fascia d'età</div>
                 <select name="Età:" id="range-età">
-                    <option value="18-65">Maggiorenne</option>
-                    <option value="-18">Minorenne</option>
-                    <option value="+65">Over 65</option>
+                    <option value="anni 18-65">Maggiorenne</option>
+                    <option value="anni -18">Minorenne</option>
+                    <option value="anni +65">Over 65</option>
                 </select>
             </label>
-            <button id="sottometti">
-                Invia Dati
-            </button>
-            <input type="reset">
+            <input type="submit" id="sottometti" value="Genera">
+            <input type="reset" value="Annulla">
+        </div>
+         <!--OUTPUT INFO BIGLIETTO UTENTE -->
+         <div>
+            
+         </div>
 
-        </form>
-        
+            
     </main>
       <script src="js/scripts.js" type="text/javascript"></script>
 </body>
